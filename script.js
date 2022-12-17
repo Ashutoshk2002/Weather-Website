@@ -41,10 +41,10 @@ submit.addEventListener("click", (e) => {
 getWeather("Delhi");
 
 
-const getWeather2 = (city) => {
-  cityName.innerHTML = city;
+const getWeather2 = () => {
+  
   fetch(
-    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + city,
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Mumbai",
     options
   )
     .then((response) => response.json())
@@ -67,10 +67,10 @@ const getWeather2 = (city) => {
     .catch((err) => console.error(err));
 };
 
-const getWeather3 = (city) => {
-  cityName.innerHTML = city;
+const getWeather3 = () => {
+ 
   fetch(
-    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + city,
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=moscow",
     options
   )
     .then((response) => response.json())
@@ -93,10 +93,10 @@ const getWeather3 = (city) => {
     .catch((err) => console.error(err));
 };
 
-const getWeather4 = (city) => {
-  cityName.innerHTML = city;
+const getWeather4 = () => {
+  
   fetch(
-    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + city,
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Tokyo",
     options
   )
     .then((response) => response.json())
@@ -119,10 +119,10 @@ const getWeather4 = (city) => {
     .catch((err) => console.error(err));
 };
 
-const getWeather5 = (city) => {
-  cityName.innerHTML = city;
+const getWeather5 = () => {
+  
   fetch(
-    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + city,
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=berlin",
     options
   )
     .then((response) => response.json())
@@ -145,10 +145,10 @@ const getWeather5 = (city) => {
     .catch((err) => console.error(err));
 };
 
-const getWeather6 = (city) => {
-  cityName.innerHTML = city;
+const getWeather6 = () => {
+  
   fetch(
-    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + city,
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=canberra",
     options
   )
     .then((response) => response.json())
@@ -171,7 +171,7 @@ const getWeather6 = (city) => {
 };
 
 getWeather2("Mumbai");
-getWeather3("Moscow");
-getWeather4("Tokyo");
-getWeather5("Berlin");
-getWeather6("Canberra");
+getWeather3();
+getWeather4();
+getWeather5();
+getWeather6();
