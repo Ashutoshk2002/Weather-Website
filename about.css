@@ -36,6 +36,8 @@
     padding: 0 16px;
     position: relative;
     left:15em;
+    width:auto;
+
   }
   
   .container::after, .row::after {
