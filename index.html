@@ -32,18 +32,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#xyz">About this App</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Mumbai</a></li>
-                            <li><a class="dropdown-item" href="#">Pune</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#">Bangalore</a></li>
-                        </ul>
-                    </li> -->
+
 
                 </ul>
                 <form class="d-flex" role="search">
@@ -67,13 +56,12 @@
                         </div>
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title"><span id="temp2"></span>
-                                <small class="text-muted fw-light"><span>&#8451;</span>
-                                </small>
+                                <small class="text-muted fw-light"><span>&#8451;</span></small>
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Temperature is <span id="temp"></span></li>
-                                <li>Max Temperature is <span id="max_temp"></span></li>
-                                <li>Min Temperature is <span id="min_temp"></span></li>
+                                <li>Temperature is <span id="temp"></span><small class="text-muted fw-light"><span>&#8451;</span></small></li>
+                                <li>Max Temperature is <span id="max_temp"></span><small class="text-muted fw-light"><span>&#8451;</span></small></li>
+                                <li>Min Temperature is <span id="min_temp"></span><small class="text-muted fw-light"><span>&#8451;</span></small></li>
                             </ul>
 
                         </div>
@@ -90,8 +78,8 @@
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Cloud PCT is <span id="cloud_pct"></span></li>
-                                <li>Feels like <span id="feels_like"></span></li>
-                                <li>Humidity is <span id="humidity"></span></li>
+                                <li>Feels like <span id="feels_like"></span><small class="text-muted fw-light"><span>&#8451;</span></small></li>
+                                <li>Humidity is <span id="humidity"></span><small class="text-muted fw-light"> %</small></li>
                             </ul>
 
                         </div>
@@ -108,7 +96,7 @@
                             </h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Wind Speed is <span id="wind_speed"></span></li>
-                                <li>Wind Degrees is <span id="wind_degrees"></span></li>
+                                <li>Wind Degrees is <span id="wind_degrees"></span><span>&#176;</span></li>
                                 <li>Sunrise Time is <span id="sunrise"></span></li>
                                 <li>Sunset Time is <span id="sunset"></span></li>
                             </ul>
@@ -127,7 +115,7 @@
                     <thead>
                         <tr>
                             <th style="width: 34%"></th>
-                            <th style="width: 22%">Temp</th>
+                            <th style="width: 22%">Temp <small class="text-muted fw-light"><span>&#8451;</span></small></th>
                             <th style="width: 22%">Cloud_pct</th>
                             <th style="width: 22%">Feels_like</th>
                             <th style="width: 22%">Humidity</th>
@@ -142,16 +130,16 @@
                     <tbody>
                         <tr>
                             <th scope="row" class="text-start">Mumbai</th>
-                            <td><span id="temp_mumbai"></span></td>
+                            <td><span id="temp_mumbai"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
                             <td><span id="cloud_pct_mumbai"></span></td>
-                            <td><span id="feels_like_mumbai"></span></td>
-                            <td><span id="humidity_mumbai"></span></td>
-                            <td><span id="max_temp_mumbai"></span></td>
-                            <td><span id="min_temp_mumbai"></span></td>
+                            <td><span id="feels_like_mumbai"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
+                            <td><span id="humidity_mumbai"></span><small class="text-muted fw-light"> %</small></td>
+                            <td><span id="max_temp_mumbai"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
+                            <td><span id="min_temp_mumbai"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
                             <td><span id="sunrise_mumbai"></span></td>
                             <td><span id="sunset_mumbai"></span></td>
-                            <td><span id="wind_degrees_mumbai"></span></td>
-                            <td><span id="wind_speed_mumbai"></span></td>
+                            <td><span id="wind_degrees_mumbai"></span><span>&#176;</span></td>
+                            <td><span id="wind_speed_mumbai"></span> km/hr</td>
 
                         </tr>
                     </tbody>
@@ -159,59 +147,59 @@
                     <tbody>
                         <tr>
                             <th scope="row" class="text-start">Moscow</th>
-                            <td><span id="temp_moscow"></span></td>
+                            <td><span id="temp_moscow"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
                             <td><span id="cloud_pct_moscow"></span></td>
-                            <td><span id="feels_like_moscow"></span></td>
-                            <td><span id="humidity_moscow"></span></td>
-                            <td><span id="max_temp_moscow"></span></td>
-                            <td><span id="min_temp_moscow"></span></td>
+                            <td><span id="feels_like_moscow"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
+                            <td><span id="humidity_moscow"></span><small class="text-muted fw-light"> %</small></td>
+                            <td><span id="max_temp_moscow"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
+                            <td><span id="min_temp_moscow"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
                             <td><span id="sunrise_moscow"></span></td>
                             <td><span id="sunset_moscow"></span></td>
-                            <td><span id="wind_degrees_moscow"></span></td>
-                            <td><span id="wind_speed_moscow"></span></td>
+                            <td><span id="wind_degrees_moscow"></span><span>&#176;</span></td>
+                            <td><span id="wind_speed_moscow"></span> km/hr</td>
                         </tr>
 
                         <tr>
                             <th scope="row" class="text-start">Tokyo</th>
-                            <td><span id="temp_Tokyo"></span></td>
+                            <td><span id="temp_Tokyo"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
                             <td><span id="cloud_pct_Tokyo"></span></td>
-                            <td><span id="feels_like_Tokyo"></span></td>
-                            <td><span id="humidity_Tokyo"></span></td>
-                            <td><span id="max_temp_Tokyo"></span></td>
-                            <td><span id="min_temp_Tokyo"></span></td>
+                            <td><span id="feels_like_Tokyo"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
+                            <td><span id="humidity_Tokyo"></span><small class="text-muted fw-light"> %</small></td>
+                            <td><span id="max_temp_Tokyo"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
+                            <td><span id="min_temp_Tokyo"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
                             <td><span id="sunrise_Tokyo"></span></td>
                             <td><span id="sunset_Tokyo"></span></td>
-                            <td><span id="wind_degrees_Tokyo"></span></td>
-                            <td><span id="wind_speed_Tokyo"></span></td>
+                            <td><span id="wind_degrees_Tokyo"></span><span>&#176;</span></td>
+                            <td><span id="wind_speed_Tokyo"></span> km/hr</td>
                         </tr>
 
                         <tr>
                             <th scope="row" class="text-start">Berlin</th>
 
-                            <td><span id="temp_berlin"></span></td>
+                            <td><span id="temp_berlin"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
                             <td><span id="cloud_pct_berlin"></span></td>
-                            <td><span id="feels_like_berlin"></span></td>
-                            <td><span id="humidity_berlin"></span></td>
-                            <td><span id="max_temp_berlin"></span></td>
-                            <td><span id="min_temp_berlin"></span></td>
+                            <td><span id="feels_like_berlin"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
+                            <td><span id="humidity_berlin"></span><small class="text-muted fw-light"> %</small></td>
+                            <td><span id="max_temp_berlin"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
+                            <td><span id="min_temp_berlin"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
                             <td><span id="sunrise_berlin"></span></td>
                             <td><span id="sunset_berlin"></span></td>
-                            <td><span id="wind_degrees_berlin"></span></td>
-                            <td><span id="wind_speed_berlin"></span></td>
+                            <td><span id="wind_degrees_berlin"></span><span>&#176;</span></td>
+                            <td><span id="wind_speed_berlin"></span> km/hr</td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Canberra</th>
 
-                            <td><span id="temp_canberra"></span></td>
+                            <td><span id="temp_canberra"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
                             <td><span id="cloud_pct_canberra"></span></td>
-                            <td><span id="feels_like_canberra"></span></td>
-                            <td><span id="humidity_canberra"></span></td>
-                            <td><span id="max_temp_canberra"></span></td>
-                            <td><span id="min_temp_canberra"></span></td>
+                            <td><span id="feels_like_canberra"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
+                            <td><span id="humidity_canberra"></span><small class="text-muted fw-light"> %</small></td>
+                            <td><span id="max_temp_canberra"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
+                            <td><span id="min_temp_canberra"></span><small class="text-muted fw-light"><span>&#8451;</span></small></td>
                             <td><span id="sunrise_canberra"></span></td>
                             <td><span id="sunset_canberra"></span></td>
-                            <td><span id="wind_degrees_canberra"></span></td>
-                            <td><span id="wind_speed_canberra"></span></td>
+                            <td><span id="wind_degrees_canberra"></span><span>&#176;</span></td>
+                            <td><span id="wind_speed_canberra"></span> km/hr</td>
 
                         </tr>
                     </tbody>
@@ -230,7 +218,7 @@
 
 
     </div>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
